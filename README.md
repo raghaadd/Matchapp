@@ -8,3 +8,10 @@
 <li>Deyar Idhilie: Backend Developer</li>
 <li>Israa Sabri: Backend Developer</li>
 </ul>
+
+<h2 align="left"> Poject Demo</h2> 
+<p> You can click on th following youtube link to see full demo for this project: https://youtu.be/_GQJOI99Mdc</p>
+
+<h2 align="left">PowerPoint Slides</h2> 
+<p> You can click on th following PowerPoint Slides to see full description about project: https://youtu.be/_GQJOI99Mdc</p>
+

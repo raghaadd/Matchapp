@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchApp - Join</title>
+    <link rel="stylesheet" href="styles/loginStyles.css">
+    <link rel="stylesheet" href="styles/globalStyles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        #hlink:link, #hlink:visited {
+            /* background-color: #f44336; */
+            color: white;
+            /* font-size: 25px; */
+            /* padding: 14px 25px; */
+            /* text-align: center;
+            text-decoration: none;
+            display: inline-block; */
+          }
+    </style>    
+</head>
+<body class="bg-lightPrimaryColor">
+    <header class="container-fluid align-items-center py-3 px-2 px-sm-5 d-flex justify-content-between shadow-sm bg-white themedBg">
+        <h1 class="fs-5 fw-bold p-0 m-0">MatchApp</h1>
+        <div class="m-0 p-0 d-flex">
+            <a type="button" class="btn btn-xs text-nowrap py-0 px-2">
+                <span class="fs-6 fw-normal text-end">Who?</span>
+            </a>
+            <a type="button" class="btn btn-xs text-nowrap py-0 px-2">
+                <span class="fs-6 fw-normal text-end">Why?</span>
+            </a>
+            <a href="index.html" type="button" class="btn btn-xs text-nowrap py-0 px-2">
+                <span class="fs-6 fw-normal text-end">Home</span>
+            </a>
+        </div>
+    </header>
+    <div class="mt-4 px-5 py-5 maxWidth mx-auto">
+        <div class="row shadow-sm">
+            <div class="col-12 col-md-7 px-5 py-5 rounded-start bg-light">
+                <div class="d-flex flex-column px-5 gap-4">
+                    <span>
+                        <h2 class="fs-5 text-start fw-bolder">Welcome Back...</h2>
+                        <h3 class="fs-6 text-start placeholder">Please enter your details!</h2>
+                    </span>
+                    <button type="button" class="btn btn-xs shadow-sm" id="googleLogin">
+                        <i class="bi bi-google me-1" id="icon"></i>
+                        <span class="fs-6 fw-normal text-end">Log in with Google</span>
+                    </button>
+                    <h6 class="text-center placeholder">or</h6>
+                    <input id="email" type="email"
+                        class="form-control fs-6 bg-transparent"
+                        placeholder="Email or Username">
+                    <input id="password" type="password"
+                        class="form-control fs-6 bg-transparent"
+                        placeholder="Password">
+                    <a href="" class="fw-bold fs-13 text-end black -mt-15">Forgot Password?</a>
+                    <button type="button" class="btnEdited bg-darkPrimaryColor btn-xs text-nowrap shadow-sm" id="login">
+                        <span class="fs-6 fw-normal text-end"><a href="homepage.html" id="hlink">Log in</a></span>
+                    </button>
+                    <span class="text-center">
+                        Don't have an account?
+                        <a href="register.html" type="button" class="btn btn-sm fw-bold fs-6 text-center px-0">Sign up!</a>
+                    </span>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 d-none d-md-block p-0">
+                <img src="image/meetUp.png" alt="LogIn" class="w-100 h-100 imgCover rounded-end"/>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="javaScript/logIn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

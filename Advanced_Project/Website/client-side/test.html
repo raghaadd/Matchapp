@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<title>Display IP Address</title>
+<h2> Using XMLHTTPRequest method to get the JavaScript request</h2>
+<style>
+body {
+background-color: #CCBBFF;
+}
+h1 {
+font-family: sans-serif;
+text-align: center;
+padding-top: 40px;
+font-size: 40px;
+margin: -10px;
+}
+p {
+font-family: sans-serif;
+color: #000000;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h1 id=ipAddress></h1>
+<p>( The above is the IP Address of your machine )</p>
+<script>
+let IPxhr = new XMLHttpRequest();
+IPxhr.open('GET', "http://localhost:5000/index", true);
+IPxhr.send();
+IPxhr.onreadystatechange = processRequest;
+function processRequest(e) {
+if (IPxhr.readyState == 4 && IPxhr.status == 200) {
+let response = JSON.parse(IPxhr.responseText);
+document.querySelector("#ipAddress").innerHTML = response.ip;
+}
+}
+</script>
+</body>
+</html>

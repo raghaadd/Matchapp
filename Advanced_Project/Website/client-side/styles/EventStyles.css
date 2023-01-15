@@ -1,0 +1,21 @@
+.avatarDiv {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+
+.topDiv {
+    height: 500px;
+}
+
+.fullHeight {
+    height: 100%;
+}
+
+.textShadow {
+    text-shadow: 2px 2px 2px #5a5a5a88;
+}
+
+.minWidthTag {
+    min-width: 100px;
+}

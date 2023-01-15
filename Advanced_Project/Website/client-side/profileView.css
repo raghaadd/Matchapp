@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --white:#f7f5f1;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+body{
+    background:#eee;
+    overflow-x: hidden;
+    padding-left: 35rem;
+    
+}
+
+
+
+.heading{
+    text-align: center;
+    margin:6rem 7rem;
+    font-size: 5rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:rgb(17, 17, 17);
+}
+
+.heading span{
+    color:var(--black);
+}
+
+header{
+    position:fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:40rem;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    margin-top: 55px;
+}
+
+header .user img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+    transition: all 1s;
+    
+}
+
+header .navbar{
+    width: 100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding:5px 10px;
+}
+
+
+header .navbar ul li a{
+    display: block;
+    padding: 5px;
+    margin: 3px;
+    background:#333;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+    
+
+}
+
+header .navbar ul li a:hover{
+    background:var(--white);
+}
+
+#menu{
+    position:absolute;
+    top:2rem; right:2rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+input[type="text"],
+input[type="email"]{
+    display: block;
+    box-sizing: border-box;
+    background-color:none;
+    color: #3498db;
+    margin-bottom: 30px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #0082e6 ;
+    font-family: 'tasneem', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+input[type="text"]{
+    margin-top: 4px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus{
+    border-bottom: 1px solid #0082e6 ;
+    border-bottom-right-radius:20px ;
+    color: #3498db;
+    transition: 0.2s ease;
+}
+input[type="file"]{
+    display: none;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+  
+ 
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; 
+    border: 1px solid #888;
+    width: 40%; 
+    height: 80%;
+  }
+  
+
+.portfolio .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:rgb(15, 15, 15);
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.portfolio .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, .5fr));
+    grid-template-rows: auto auto ;
+    grid-auto-flow: column;
+    margin-left: 80px;
+    margin-right: 50px;
+    gap:15px;
+}
+
+.portfolio .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.portfolio .box-container .box img{
+    height: 100px;
+}
+
+.portfolio .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.portfolio .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.portfolio .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.portfolio .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.portfolio .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .portfolio{
+        padding:20px;
+    }
+}
+
